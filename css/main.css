@@ -1,0 +1,62 @@
+/* Design styles */
+/* Colors */
+/* Text */
+/* Normalise styles */
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Figtree", sans-serif;
+  box-sizing: border-box; }
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none; }
+
+/* Header section */
+header #announcements {
+  background-color: green;
+  color: beige; }
+header #nav_bar {
+  /* Horizontal layout */
+  display: flex;
+  justify-content: space-between;
+  /* Remove bullet points, underline, and blue text on links */ }
+  header #nav_bar .links {
+    list-style: none; }
+    header #nav_bar .links li {
+      display: inline; }
+      header #nav_bar .links li a {
+        text-decoration: none;
+        color: black; }
+header #hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* Main section */
+main #cta {
+  text-align: center; }
+  main #cta .links {
+    display: flex;
+    justify-content: center;
+    list-style: none; }
+main #features {
+  display: flex; }
+  main #features .feature {
+    display: flex; }
+
+footer .links {
+  display: flex; }
+  footer .links * {
+    flex: 1; }
+
+/*# sourceMappingURL=main.css.map */

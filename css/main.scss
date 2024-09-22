@@ -1,0 +1,95 @@
+/* Design styles */
+/* Colors */
+$gold: gold;
+$green: green;
+$teal: teal;
+$beige: beige;
+
+/* Text */
+$body-text: "Figtree", sans-serif;
+$alt-text: "Lora", serif;
+
+/* Normalise styles */
+html {
+    font-size: 16px;
+}
+body {
+    font-family: $body-text;
+    box-sizing: border-box;
+}
+html, body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+
+/* Header section */
+header {
+    #announcements {
+        background-color: $green;
+        color: $beige;
+    }
+    #nav_bar {
+        /* Horizontal layout */
+        display: flex;
+        justify-content: space-between;
+
+        /* Remove bullet points, underline, and blue text on links */
+        .links {
+            list-style: none;
+
+            li {
+                display: inline;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    #hero {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Main section */
+main {
+    #cta {
+        text-align: center;
+        
+        .links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+    }
+
+    #features {
+        display: flex;
+
+        .feature {
+            display: flex;
+        }
+    }
+}
+
+footer {
+    .links {
+        display: flex;
+        * {
+            flex: 1;
+        }
+    }
+}
