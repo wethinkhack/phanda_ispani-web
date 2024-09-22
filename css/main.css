@@ -33,12 +33,12 @@ html {
   font-size: 16px; }
 
 body {
-  font-family: "Figtree", sans-serif;
-  box-sizing: border-box; }
+  font-family: "Figtree", sans-serif; }
 
-html, body, h1, h2, h3, h4, h5, h6, p, ul {
+* {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
@@ -59,27 +59,38 @@ header {
   background-size: cover;
   border-bottom: 1px solid gray;
   background-repeat: no-repeat; }
-  header nav {
+  header #menu_toggle {
+    display: none; }
+  header #announcements {
+    background-color: #104332;
+    color: white;
+    padding: .8rem;
+    font-weight: bold;
     position: fixed;
     width: 100%;
-    z-index: 5; }
-    header nav #announcements {
-      background-color: #104332;
-      color: white;
-      padding: .8rem;
-      text-align: center;
-      font-weight: bold; }
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  header nav {
+    position: fixed;
+    top: 5vh;
+    width: 100vw;
+    z-index: 5;
+    background-color: #f4f0e5;
+    display: flex;
+    padding: 1rem 2rem; }
+    header nav .logo {
+      width: 54.22px;
+      height: 44.45px; }
     header nav #nav_bar {
       /* Horizontal layout */
+      flex: 1;
       display: flex;
-      justify-content: space-between;
-      background-color: #f4f0e5;
       align-items: center;
-      padding: 0 2rem;
+      justify-content: end;
+      gap: 4rem;
       /* Remove bullet points, underline, and blue text on links */ }
-      header nav #nav_bar .logo {
-        width: 81.33px;
-        height: 66.67px; }
       header nav #nav_bar .links {
         list-style: none; }
         header nav #nav_bar .links li {
@@ -117,10 +128,12 @@ main {
     main #cta h2 {
       font-family: "Lora";
       font-size: 3rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      padding: 0 2rem; }
     main #cta p {
-      padding: 0 20rem;
-      line-height: 1.5; }
+      padding: 0 2rem;
+      line-height: 1.5;
+      padding: 0 20rem; }
     main #cta .links {
       display: flex;
       justify-content: center;
@@ -145,11 +158,11 @@ main {
         gap: 1.5em;
         align-items: center; }
         main #features ul .feature .icon {
-          width: 25px;
-          height: 25px;
+          width: 60px;
+          height: 60px;
           background-color: #f4f0e5;
           border-radius: 50%;
-          padding: 1rem; }
+          padding: .9rem; }
           main #features ul .feature .icon img {
             width: 100%;
             filter: brightness(0.2); }

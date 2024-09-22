@@ -43,11 +43,11 @@ html {
 }
 body {
     font-family: $body-text;
-    box-sizing: border-box;
 }
-html, body, h1, h2, h3, h4, h5, h6, p, ul {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 a {
     text-decoration: none;
@@ -71,30 +71,44 @@ header {
     border-bottom: 1px solid gray;
     background-repeat: no-repeat;
     
-    nav {
+    #menu_toggle {
+        display: none;
+    }
+
+    #announcements {
+        background-color: $green;
+        color: white;
+        padding: .8rem;
+        font-weight: bold;
         position: fixed;
         width: 100%;
-        z-index: 5;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        #announcements {
-            background-color: $green;
-            color: white;
-            padding: .8rem;
-            text-align: center;
-            font-weight: bold;
+    nav {
+        position: fixed;
+        top: 5vh;
+        width: 100vw;
+        z-index: 5;
+        background-color: $beige;
+        display: flex;
+        // justify-content: space-between;
+        padding: 1rem 2rem;
+
+        .logo {
+            width: 54.22px;
+            height: 44.45px;
         }
         #nav_bar {
             /* Horizontal layout */
+            flex: 1;
             display: flex;
-            justify-content: space-between;
-            background-color: $beige;
             align-items: center;
-            padding: 0 2rem;
-
-            .logo {
-                width: 81.33px;
-                height: 66.67px;
-            }
+            justify-content: end;
+            gap: 4rem;
     
             /* Remove bullet points, underline, and blue text on links */
             .links {
@@ -151,11 +165,13 @@ main {
             font-family: "Lora";
             font-size: 3rem;
             margin-bottom: 2rem;
+            padding: 0 2rem;
         }
 
         p {
-            padding: 0 20rem;
+            padding: 0 2rem;
             line-height: 1.5;
+            padding: 0 20rem;
         }
         
         .links {
@@ -192,11 +208,11 @@ main {
                 align-items: center;
     
                 .icon {
-                    width: 25px;
-                    height: 25px;
+                    width: 60px;
+                    height: 60px;
                     background-color: $beige;
                     border-radius: 50%;
-                    padding: 1rem;
+                    padding: .9rem;
     
                     img {
                         width: 100%;
