@@ -1,6 +1,33 @@
 /* Design styles */
 /* Colors */
 /* Text */
+/* Buttons */
+.btn {
+  border-radius: 10px;
+  padding: .7rem 1rem;
+  display: inline-block; }
+
+.btn_outline {
+  border: 1px solid gray;
+  background-color: transparent; }
+
+.btn_fill {
+  background-color: black;
+  color: white; }
+
+.beige {
+  background-color: #f4f0e5; }
+
+.gold {
+  background-color: #e9e730; }
+
+.teal {
+  background-color: #348c8d; }
+
+.green {
+  background-color: #104332;
+  color: #f4f0e5; }
+
 /* Normalise styles */
 html {
   font-size: 16px; }
@@ -17,46 +44,152 @@ a {
   text-decoration: none;
   color: inherit; }
 
+a:hover {
+  opacity: .7; }
+
 ul {
   list-style: none; }
 
-/* Header section */
-header #announcements {
-  background-color: green;
-  color: beige; }
-header #nav_bar {
-  /* Horizontal layout */
-  display: flex;
-  justify-content: space-between;
-  /* Remove bullet points, underline, and blue text on links */ }
-  header #nav_bar .links {
-    list-style: none; }
-    header #nav_bar .links li {
-      display: inline; }
-      header #nav_bar .links li a {
-        text-decoration: none;
-        color: black; }
-header #hero {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+img {
+  max-width: 100%; }
 
-/* Main section */
-main #cta {
-  text-align: center; }
-  main #cta .links {
+/* Header section */
+header {
+  background-image: url("https://images.unsplash.com/photo-1526583547718-e88dc16de312?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  border-bottom: 1px solid gray;
+  background-repeat: no-repeat; }
+  header nav {
+    position: fixed;
+    width: 100%;
+    z-index: 5; }
+    header nav #announcements {
+      background-color: #104332;
+      color: white;
+      padding: .8rem;
+      text-align: center;
+      font-weight: bold; }
+    header nav #nav_bar {
+      /* Horizontal layout */
+      display: flex;
+      justify-content: space-between;
+      background-color: #f4f0e5;
+      align-items: center;
+      padding: 0 2rem;
+      /* Remove bullet points, underline, and blue text on links */ }
+      header nav #nav_bar .logo {
+        width: 81.33px;
+        height: 66.67px; }
+      header nav #nav_bar .links {
+        list-style: none; }
+        header nav #nav_bar .links li {
+          display: inline; }
+          header nav #nav_bar .links li a {
+            text-decoration: none;
+            color: inherit;
+            padding: 1rem; }
+      header nav #nav_bar .links.account {
+        color: white; }
+        header nav #nav_bar .links.account a {
+          padding: .7rem 1rem; }
+  header #hero {
+    padding-top: 5rem;
+    height: 80vh;
     display: flex;
     justify-content: center;
-    list-style: none; }
-main #features {
-  display: flex; }
-  main #features .feature {
-    display: flex; }
+    align-items: center; }
+    header #hero #title {
+      font-family: "Lora";
+      font-size: 4rem;
+      color: gold; }
 
-footer .links {
-  display: flex; }
-  footer .links * {
-    flex: 1; }
+/* Main section */
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main #cta {
+    width: 100%;
+    padding: 5rem 0;
+    text-align: center;
+    border-bottom: 1px solid gray; }
+    main #cta h2 {
+      font-family: "Lora";
+      font-size: 3rem;
+      margin-bottom: 2rem; }
+    main #cta p {
+      padding: 0 20rem;
+      line-height: 1.5; }
+    main #cta .links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 2rem;
+      margin-top: 2rem; }
+  main #features {
+    padding: 0 10rem;
+    display: flex;
+    border-bottom: 1px solid gray; }
+    main #features .employers, main #features .job_seekers {
+      padding: 5rem 3rem; }
+      main #features .employers h2, main #features .job_seekers h2 {
+        font-family: "Lora";
+        margin-bottom: 1rem; }
+    main #features ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem; }
+      main #features ul .feature {
+        display: flex;
+        gap: 1.5em;
+        align-items: center; }
+        main #features ul .feature .icon {
+          width: 25px;
+          height: 25px;
+          background-color: #f4f0e5;
+          border-radius: 50%;
+          padding: 1rem; }
+          main #features ul .feature .icon img {
+            width: 100%;
+            filter: brightness(0.2); }
+        main #features ul .feature p {
+          flex: 1; }
+  main #premium {
+    display: flex;
+    padding: 0 10rem;
+    gap: 2rem;
+    border-bottom: 1px solid gray; }
+    main #premium div {
+      width: 60%;
+      padding: 5rem 0; }
+      main #premium div h2 {
+        margin-bottom: 2rem;
+        font-family: "Lora", serif;
+        font-size: 3rem; }
+      main #premium div p {
+        margin-bottom: 2rem; }
+      main #premium div ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; }
+    main #premium img {
+      width: 40%; }
+
+footer {
+  background-color: #f4f0e5;
+  padding: 5rem; }
+  footer .links {
+    display: flex;
+    margin-bottom: 5rem; }
+    footer .links * {
+      flex: 1; }
+    footer .links h2 {
+      font-family: "Lora";
+      margin-bottom: 1rem; }
+    footer .links ul {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem; }
 
 /*# sourceMappingURL=main.css.map */
