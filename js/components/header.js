@@ -60,7 +60,7 @@ class MainHeader extends HTMLElement {
                     </svg>
 
                     <div class="user">
-                        <img class="avatar" src="img/avatar-1.jpg" alt="User avatar" />
+                        <img class="avatar" src="${path}img/avatar-1.jpg" alt="User avatar" />
                     </div>
                 </div>
             </section>
