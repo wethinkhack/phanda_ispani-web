@@ -10,7 +10,7 @@ class MainHeader extends HTMLElement {
                 <!-- Navigation section -->
                 <nav>
                     <div id="logo">
-                        <a href=""><img class="logo" src="../img/logo.png" alt="Phanda Ispani logo" width="122px" height="100px"></a>
+                        <a href=""><img class="logo" src="img/logo.png" alt="Phanda Ispani logo" width="122px" height="100px"></a>
                     </div>
 
                     <!-- Mobile menu toggle -->
@@ -37,7 +37,7 @@ class MainHeader extends HTMLElement {
         if (this.userSignedIn()) {
             return `
                 <ul class="links account">
-                    <li><a href="../pages/account.html" class="btn btn_fill">Get Started</a></li>
+                    <li><a href="pages/account.html" class="btn btn_fill">Get Started</a></li>
                 </ul>
             `;
         }
@@ -52,7 +52,7 @@ class MainHeader extends HTMLElement {
                     </svg>
 
                     <div class="user">
-                        <img class="avatar" src="../img/avatar-1.jpg" alt="User avatar" />
+                        <img class="avatar" src="img/avatar-1.jpg" alt="User avatar" />
                     </div>
                 </div>
             </section>
