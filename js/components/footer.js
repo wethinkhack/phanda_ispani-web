@@ -12,7 +12,7 @@ class MainFooter extends HTMLElement {
             <div class="company">
                 <h2>Company</h2>
                 <ul>
-                    <li><a href="../../pages/about.html">About</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
                     <li><a href="#">Terms</a></li>
                     <li><a href="#">Privacy & Cookies</a></li>
                 </ul>

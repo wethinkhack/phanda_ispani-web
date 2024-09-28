@@ -241,7 +241,7 @@ footer {
         gap: 0.8rem;
         align-items: end; }
         #container #header .bottom .user .avatar {
-          width: 100px;
+          width: 125px;
           border-radius: 10px; }
         #container #header .bottom .user div {
           display: flex;

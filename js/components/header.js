@@ -23,7 +23,7 @@ class MainHeader extends HTMLElement {
                     <section id="nav_bar">
                         <ul class="links browse">
                             <li><a href="#">Discover</a></li>
-                            <li><a href="../../pages/job_board.html">Job Search</a></li>
+                            <li><a href="../pages/job_board.html">Job Search</a></li>
                             <li><a href="#">For Recruiters</a></li>
                         </ul>
                         </section>
@@ -37,7 +37,7 @@ class MainHeader extends HTMLElement {
         if (this.userSignedIn()) {
             return `
                 <ul class="links account">
-                    <li><a href="../../pages/account.html" class="btn btn_fill">Get Started</a></li>
+                    <li><a href="../pages/account.html" class="btn btn_fill">Get Started</a></li>
                 </ul>
             `;
         }
