@@ -1,3 +1,4 @@
+/* Header section */
 /* Design styles */
 /* Colors */
 /* Text */
@@ -28,6 +29,9 @@
   background-color: #104332;
   color: #f4f0e5; }
 
+a:active {
+  color: #e9e730; }
+
 /* Normalise styles */
 html {
   font-size: 16px; }
@@ -36,6 +40,8 @@ body {
   font-family: "Figtree", sans-serif; }
   body #menu_toggle {
     display: none; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body .alt_text {
+    font-family: "Lora", serif; }
 
 * {
   margin: 0;
@@ -56,13 +62,13 @@ img {
   max-width: 100%; }
 
 /* Header section */
-/* Header section */
 main-header #announcements {
   background-color: #104332;
   color: white;
   padding: .8rem;
   font-weight: bold;
   position: fixed;
+  top: 0;
   width: 100%;
   height: 5vh;
   display: flex;
@@ -76,7 +82,9 @@ main-header nav {
   z-index: 5;
   background-color: #f4f0e5;
   display: flex;
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  gap: 1rem;
+  /* User profile */ }
   main-header nav .logo {
     width: 54.22px;
     height: 44.45px; }
@@ -102,6 +110,25 @@ main-header nav {
       color: white; }
       main-header nav #nav_bar .links.account a {
         padding: .7rem 1rem; }
+  main-header nav .top {
+    display: flex;
+    align-items: center; }
+    main-header nav .top .utility {
+      display: flex;
+      gap: 1rem;
+      align-items: center; }
+      main-header nav .top .utility .icon {
+        color: #104332;
+        height: 25px;
+        width: 25px; }
+      main-header nav .top .utility .user {
+        display: flex;
+        gap: 1rem;
+        align-items: center; }
+        main-header nav .top .utility .user .avatar {
+          border-radius: 50%;
+          height: 40px;
+          width: 40px; }
 
 /* Hero section */
 #hero {
@@ -194,4 +221,21 @@ main {
     main #premium img {
       width: 40%; }
 
-/*# sourceMappingURL=main.css.map */
+/* Footer */
+footer {
+  background-color: #f4f0e5;
+  padding: 5rem; }
+  footer .links {
+    display: flex;
+    margin-bottom: 5rem; }
+    footer .links * {
+      flex: 1; }
+    footer .links h2 {
+      font-family: "Lora";
+      margin-bottom: 1rem; }
+    footer .links ul {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem; }
+
+/*# sourceMappingURL=landing_page.css.map */
