@@ -1,5 +1,13 @@
 class MainHeader extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    
     connectedCallback() {
+        let path = window.location.href;
+        path = path.substring(0, path.split('/', 4).join('/').length + 1);
+
         this.innerHTML = `
             <header>
                 <section id="announcements">
@@ -10,7 +18,7 @@ class MainHeader extends HTMLElement {
                 <!-- Navigation section -->
                 <nav>
                     <div id="logo">
-                        <a href=""><img class="logo" src="img/logo.png" alt="Phanda Ispani logo" width="122px" height="100px"></a>
+                        <a href="${path}"><img class="logo" src="${path}img/logo.png" alt="Phanda Ispani logo" width="122px" height="100px"></a>
                     </div>
 
                     <!-- Mobile menu toggle -->
@@ -22,22 +30,22 @@ class MainHeader extends HTMLElement {
 
                     <section id="nav_bar">
                         <ul class="links browse">
-                            <li><a href="#">Discover</a></li>
-                            <li><a href="../pages/job_board.html">Job Search</a></li>
-                            <li><a href="#">For Recruiters</a></li>
+                            <li><a href="${path}pages/home.html">Discover</a></li>
+                            <li><a href="${path}pages/job_listing.html">Job Search</a></li>
+                            <li><a href="${path}pages/job_posting.html">For Recruiters</a></li>
                         </ul>
                         </section>
-                    ${this.getSignInState()}
+                    ${this.getSignInState(path)}
                 </nav>
             </header>
         `;
     }
 
-    getSignInState() {
-        if (this.userSignedIn()) {
+    getSignInState(path) {
+        if (!this.userSignedIn()) {
             return `
                 <ul class="links account">
-                    <li><a href="pages/account.html" class="btn btn_fill">Get Started</a></li>
+                    <li><a href="${path}pages/account.html" class="btn btn_fill">Get Started</a></li>
                 </ul>
             `;
         }
