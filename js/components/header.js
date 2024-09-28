@@ -60,7 +60,7 @@ class MainHeader extends HTMLElement {
     }
 
     userSignedIn() {
-        return false;
+        return true;
     }
 }
 
