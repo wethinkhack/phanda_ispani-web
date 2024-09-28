@@ -2,7 +2,6 @@ class MainHeader extends HTMLElement {
     constructor() {
         super();
     }
-
     
     connectedCallback() {
         let path = window.location.href;
@@ -60,7 +59,7 @@ class MainHeader extends HTMLElement {
                     </svg>
 
                     <div class="user">
-                        <img class="avatar" src="${path}img/avatar-1.jpg" alt="User avatar" />
+                        <a href="${path}pages/profile.html"><img class="avatar" src="${path}img/avatar-1.jpg" alt="User avatar" /></a>
                     </div>
                 </div>
             </section>
