@@ -10,7 +10,7 @@ class MainHeader extends HTMLElement {
                 <!-- Navigation section -->
                 <nav>
                     <div id="logo">
-                        <a href=""><img class="logo" src="../../img/logo.png" alt="Phanda Ispani logo" width="122px" height="100px"></a>
+                        <a href=""><img class="logo" src="../img/logo.png" alt="Phanda Ispani logo" width="122px" height="100px"></a>
                     </div>
 
                     <!-- Mobile menu toggle -->
