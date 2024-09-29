@@ -33,7 +33,7 @@ class MainHeader extends HTMLElement {
                             <li><a href="${path}pages/job_listing.html">Job Search</a></li>
                             <li><a href="${path}pages/job_posting.html">For Recruiters</a></li>
                         </ul>
-                        </section>
+                    </section>
                     ${this.getSignInState(path)}
                 </nav>
             </header>
@@ -41,7 +41,7 @@ class MainHeader extends HTMLElement {
     }
 
     getSignInState(path) {
-        if (!this.userSignedIn()) {
+        if (!this.userSignedIn(path)) {
             return `
                 <ul class="links account">
                     <li><a href="${path}pages/account.html" class="btn btn_fill">Get Started</a></li>
@@ -67,7 +67,11 @@ class MainHeader extends HTMLElement {
     }
 
     userSignedIn() {
-        return true;
+        let path = window.location.href;
+        if (path.indexOf('profile') >= 0) {
+            return true;
+        }
+        return false;
     }
 }
 

@@ -66,6 +66,10 @@ main-header {
             }
         }
 
+        #menu_toggle {
+            
+        }
+
         /* User profile */
         .top {
             display: flex;
@@ -94,5 +98,12 @@ main-header {
                 }
             }
         }
+    }
+}
+
+
+@media (max-width) {
+    .top {
+
     }
 }
