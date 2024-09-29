@@ -30,9 +30,6 @@
   background-color: #104332;
   color: #f4f0e5; }
 
-a:active {
-  color: #e9e730; }
-
 /* Normalise styles */
 html {
   font-size: 16px; }
@@ -54,6 +51,7 @@ a {
   color: inherit; }
 
 a:hover {
+  color: #713f12;
   opacity: .7; }
 
 ul {
@@ -92,9 +90,6 @@ img {
   background-color: #104332;
   color: #f4f0e5; }
 
-a:active {
-  color: #e9e730; }
-
 /* Normalise styles */
 html {
   font-size: 16px; }
@@ -116,6 +111,7 @@ a {
   color: inherit; }
 
 a:hover {
+  color: #713f12;
   opacity: .7; }
 
 ul {
@@ -215,7 +211,7 @@ footer {
   grid-template-areas: "sidebar header header header header" "sidebar projects projects projects projects" ". footer footer footer footer";
   padding: 5rem 2rem 2rem 2rem;
   background-color: #f8fafc;
-  margin-top: 10vh; }
+  margin-top: 6vh; }
   #container .avatar {
     width: 40px;
     border-radius: 50%; }
@@ -253,26 +249,28 @@ footer {
           #container #header .bottom .user div .address {
             font-size: .8rem;
             color: gray; }
-      #container #header .bottom .actions ul {
-        text-align: right;
-        list-style: none; }
-        #container #header .bottom .actions ul li {
-          display: inline-block;
-          border-radius: 10px;
-          margin-left: 0.5rem;
-          color: #1e293b;
-          font-size: small;
-          padding: 0.5rem 0;
-          font-weight: bold; }
-          #container #header .bottom .actions ul li a {
-            border: 1px solid #1e293b;
-            text-decoration: none;
-            color: inherit;
-            padding: 0.5rem 1rem;
-            border-radius: inherit; }
-          #container #header .bottom .actions ul li a:hover {
-            color: white;
-            background-color: #1e293b; }
+      #container #header .bottom .actions {
+        align-self: end; }
+        #container #header .bottom .actions ul {
+          text-align: right;
+          list-style: none; }
+          #container #header .bottom .actions ul li {
+            display: inline-block;
+            border-radius: 10px;
+            margin-left: 0.5rem;
+            color: #1e293b;
+            font-size: small;
+            padding: 0.5rem 0;
+            font-weight: bold; }
+            #container #header .bottom .actions ul li a {
+              border: 1px solid #1e293b;
+              text-decoration: none;
+              color: inherit;
+              padding: 0.5rem 1rem;
+              border-radius: inherit; }
+            #container #header .bottom .actions ul li a:hover {
+              color: white;
+              background-color: #1e293b; }
   #container #sidebar {
     grid-area: sidebar; }
     #container #sidebar h1 {

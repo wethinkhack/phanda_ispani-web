@@ -36,9 +36,6 @@ $alt-text: "Lora", serif;
     background-color: $green;
     color: $beige;
 }
-a:active {
-    color: $gold;
-}
 
 /* Normalise styles */
 html {
@@ -65,6 +62,7 @@ a {
     color: inherit;
 }
 a:hover {
+    color: #713f12;
     opacity: .7;
 }
 ul {

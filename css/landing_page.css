@@ -29,9 +29,6 @@
   background-color: #104332;
   color: #f4f0e5; }
 
-a:active {
-  color: #e9e730; }
-
 /* Normalise styles */
 html {
   font-size: 16px; }
@@ -53,6 +50,7 @@ a {
   color: inherit; }
 
 a:hover {
+  color: #713f12;
   opacity: .7; }
 
 ul {

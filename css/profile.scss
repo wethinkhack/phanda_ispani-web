@@ -26,7 +26,7 @@ $beige: #f4f0e5;
         ". footer footer footer footer";
     padding: 5rem 2rem 2rem 2rem;
     background-color: $bg;
-    margin-top: 10vh;
+    margin-top: 6vh;
 
     .avatar {
         width: $avatar-width;
@@ -90,6 +90,7 @@ $beige: #f4f0e5;
             }
 
             .actions {
+                align-self: end;
                 ul {
                     text-align: right;
                     list-style: none;
