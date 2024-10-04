@@ -30,7 +30,7 @@ class MainHeader extends HTMLElement {
                     <section id="nav_bar">
                         <ul class="links browse">
                             <li><a href="${path}pages/home.html">Discover</a></li>
-                            <li><a href="${path}pages/job_listing.html">Job Search</a></li>
+                            <li><a href="${path}pages/job_board.html">Job Search</a></li>
                             <li><a href="${path}pages/job_posting.html">For Recruiters</a></li>
                         </ul>
                     </section>
