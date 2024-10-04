@@ -16,10 +16,10 @@ const firebaseConfig = {
   
   const loginPopup = document.getElementById('login');
   
-  function isValidEmail(Email) {
+  function _isValidEmail(Email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(Email);
-}
+  }
 
   loginPopup.addEventListener('submit', (e) => {
   
@@ -62,7 +62,7 @@ const firebaseConfig = {
       // Handle errors here
        const errorCode = error.code;
        const errorMessage = error.message;
-       console.error('Login error:', errorMessage);
+       console.error('Login error:', errorCode, errorMessage);
       // Display error message to the user
     });
   });
@@ -71,15 +71,15 @@ const firebaseConfig = {
   // Check if user is already logged in
   firebase.auth().onAuthStateChanged((user) => {
    if (user) {
-    // User is signed in
-     console.log('User is logged in:', user);
-     //window.location.href='products.html';
-    // Redirect or perform actions for logged in user
-  } else {
-    // User is signed out
-      console.log('User is logged out');
-    // Show login form or perform actions for logged out user
-  }
+      // User is signed in
+      console.log('User is logged in:', user);
+      //window.location.href='products.html';
+      // Redirect or perform actions for logged in user
+    } else {
+      // User is signed out
+        console.log('User is logged out');
+      // Show login form or perform actions for logged out user
+    }
   });
   
   
