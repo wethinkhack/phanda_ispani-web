@@ -53,7 +53,7 @@ class MainHeader extends HTMLElement {
                     </svg>
 
                     <div class="user">
-                        <a href="/pages/profile.html"><img class="avatar" src="/img/avatar-1.jpg" alt="User avatar" /></a>
+                        <a href="/pages/profile.html"><img class="avatar" src="https://wethinkcode.co.za/wp-content/uploads/2020/08/W-1-1536x1536.png" alt="User avatar" /></a>
                     </div>
                 </div>
             </section>

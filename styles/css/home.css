@@ -1,4 +1,4 @@
-/* Header section */
+/* Imports */
 /* Design styles */
 /* Colors */
 /* Text */
@@ -128,6 +128,22 @@ main-header nav {
           height: 40px;
           width: 40px; }
 
+footer {
+  background-color: #f4f0e5;
+  padding: 5rem; }
+  footer .links {
+    display: flex;
+    margin-bottom: 5rem; }
+    footer .links * {
+      flex: 1; }
+    footer .links h2 {
+      font-family: "Lora";
+      margin-bottom: 1rem; }
+    footer .links ul {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem; }
+
 /* Hero section */
 #hero {
   background-image: url("https://images.unsplash.com/photo-1526583547718-e88dc16de312?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -221,22 +237,5 @@ main {
         gap: 1rem; }
     main #premium img {
       width: 40%; }
-
-/* Footer */
-footer {
-  background-color: #f4f0e5;
-  padding: 5rem; }
-  footer .links {
-    display: flex;
-    margin-bottom: 5rem; }
-    footer .links * {
-      flex: 1; }
-    footer .links h2 {
-      font-family: "Lora";
-      margin-bottom: 1rem; }
-    footer .links ul {
-      display: flex;
-      flex-direction: column;
-      gap: .5rem; }
 
 /*# sourceMappingURL=home.css.map */

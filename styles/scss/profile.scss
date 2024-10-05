@@ -24,7 +24,7 @@ $beige: #f4f0e5;
         "sidebar header header header header"
         "sidebar jobs jobs jobs jobs"
         ". footer footer footer footer";
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 20vh 2rem 2rem 2rem;
     background-color: $bg;
     margin-top: 6vh;
 
@@ -58,6 +58,24 @@ $beige: #f4f0e5;
         .bottom {
             align-items: center;
             grid-area: bottom;
+
+            dialog {
+                padding: 2rem 3rem 3rem 3rem;
+                margin: 0 auto;
+                border-radius: 5px;
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+                * {
+                    display: block;
+                    margin-top: 1rem;
+                }
+
+                input, textarea {
+                    padding: .5rem;
+                    width: 100%;
+                }
+            }
 
             .user {
                 display: flex;
@@ -224,12 +242,12 @@ $beige: #f4f0e5;
             }
         }
 
-        .job:hover,
-        .user_job:hover,
-        .job_recommendation:hover {
-            color: $text-accent;
-            border: 1px solid $text-accent;
-        }
+        // .job:hover,
+        // .user_job:hover,
+        // .job_recommendation:hover {
+        //     color: $text-accent;
+        //     border: 1px solid $text-accent;
+        // }
 
         .jobs-container {
             grid-area: jobs-container;
@@ -241,19 +259,19 @@ $beige: #f4f0e5;
             .jobs {
                 // margin-top: 2rem;
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                // grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: auto;
-                grid-template-areas: 
-                    "experience education"
-                    "skills user_jobs";
+                // grid-template-areas: 
+                //     ""
+                //     "skills user_jobs";
                 gap: 1rem;
                 
-
+                .job button {
+                    margin-top: 1rem;
+                }
                 .job:hover {
                     cursor: pointer;
-                    border: 1px solid gray;
                 }
-
                 .experience {
                     grid-area: experience;
                 }
@@ -301,45 +319,45 @@ $beige: #f4f0e5;
                 }
             }
         }
-        #trending {
-            grid-area: trending;
+        // #trending {
+        //     grid-area: trending;
 
-            h2 {
-                font-size: 1.2rem;
-                margin: 2rem 0;
-            }
+        //     h2 {
+        //         font-size: 1.2rem;
+        //         margin: 2rem 0;
+        //     }
 
-            .trending-job:hover {
-                cursor: pointer;
-                color: $text-accent;
-            }
-            .trending-job:first-of-type {
-                margin: 0;
-            }
-            .trending-job {
-                display: grid;
-                grid-template-columns: $avatar-width 1fr;
-                grid-template-areas:
-                    "avatar name"
-                    "avatar job-name";
-                align-items: center;
-                column-gap: 0.5rem;
-                font-size: 0.8rem;
-                margin-top: 1rem;
+        //     .trending-job:hover {
+        //         cursor: pointer;
+        //         color: $text-accent;
+        //     }
+        //     .trending-job:first-of-type {
+        //         margin: 0;
+        //     }
+        //     .trending-job {
+        //         display: grid;
+        //         grid-template-columns: $avatar-width 1fr;
+        //         grid-template-areas:
+        //             "avatar name"
+        //             "avatar job-name";
+        //         align-items: center;
+        //         column-gap: 0.5rem;
+        //         font-size: 0.8rem;
+        //         margin-top: 1rem;
 
-                .avatar {
-                    grid-area: avatar;
-                }
+        //         .avatar {
+        //             grid-area: avatar;
+        //         }
 
-                .name {
-                    grid-area: name;
-                    align-self: end;
-                    font-weight: bold;
-                }
-                .job-name {
-                    grid-area: job-name;
-                }
-            }
-        }
+        //         .name {
+        //             grid-area: name;
+        //             align-self: end;
+        //             font-weight: bold;
+        //         }
+        //         .job-name {
+        //             grid-area: job-name;
+        //         }
+        //     }
+        // }
     }
 }

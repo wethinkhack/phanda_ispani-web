@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Vacancies</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles/css/job_posting.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/styles/css/job_posting.css" />
     <script src="/js/components/footer.js"></script>
     <script src="/js/components/header.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <main-header></main-header>
     <main class="container py-5">
-        <div class="row">
-            <div class="col-md-8">
-                <h2 class="mb-4">Available Vacancies</h2>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Mechanic</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Local dealership</h6>
-                        <p class="card-text">Looking for an entry-level skilled machanic.</p><a href="#"
-                            class="card-link">Apply Now</a>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">General worker</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Local spaza shop</h6>
-                        <p class="card-text">Seeking a product manager to lead our product team.</p><a href="#"
-                            class="card-link">Apply Now</a>
-                    </div>
-                </div><!-- More job posts can be added here -->
+      <div class="row">
+        <div class="col-md-8">
+          <h2 class="mb-4">Available Vacancies</h2>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Mechanic</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Local dealership</h6>
+              <p class="card-text">
+                Looking for an entry-level skilled machanic.
+              </p>
+              <a href="#" class="card-link">Apply Now</a>
             </div>
-            <aside class="col-md-4">
-                <h2 class="mb-4">Post a Vacancy</h2>
-                <form>
-                    <div class="form-group"><label for="jobTitle">Job Title</label><input type="text"
-                            class="form-control" id="jobTitle" placeholder="Enter job title" required></div>
-                    <div class="form-group"><label for="companyName">Company Name</label><input type="text"
-                            class="form-control" id="companyName" placeholder="Enter company name" required></div>
-                    <div class="form-group"><label for="jobDescription">Job Description</label><textarea
-                            class="form-control" id="jobDescription" rows="3" placeholder="Enter job description"
-                            required></textarea></div><button type="submit" class="btn btn_fill green">Post
-                        Vacancy</button>
-                </form>
-            </aside>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">General worker</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Local spaza shop</h6>
+              <p class="card-text">
+                Seeking a product manager to lead our product team.
+              </p>
+              <a href="#" class="card-link">Apply Now</a>
+            </div>
+          </div>
+          <!-- More job posts can be added here -->
         </div>
+        <aside class="col-md-4">
+          <h2 class="mb-4">Post a Vacancy</h2>
+          <form>
+            <div class="form-group">
+              <label for="jobTitle">Job Title</label
+              ><input
+                type="text"
+                class="form-control"
+                id="jobTitle"
+                placeholder="Enter job title"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="companyName">Company Name</label
+              ><input
+                type="text"
+                class="form-control"
+                id="companyName"
+                placeholder="Enter company name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="jobDescription">Job Description</label
+              ><textarea
+                class="form-control"
+                id="jobDescription"
+                rows="3"
+                placeholder="Enter job description"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" id="post_vacancy" class="btn btn_fill green">
+              Post Vacancy
+            </button>
+          </form>
+        </aside>
+      </div>
     </main>
     <main-footer></main-footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
