@@ -6,74 +6,58 @@
 /* Buttons */
 .btn {
   border-radius: 10px;
-  padding: 0.7rem 1rem;
-  display: inline-block;
-}
+  padding: .7rem 1rem;
+  display: inline-block; }
 
 .btn_outline {
   border: 1px solid gray;
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 .btn_fill {
   background-color: black;
-  color: white;
-}
+  color: white; }
 
 .beige {
-  background-color: #f4f0e5;
-}
+  background-color: #f4f0e5; }
 
 .gold {
-  background-color: #e9e730;
-}
+  background-color: #e9e730; }
 
 .teal {
-  background-color: #348c8d;
-}
+  background-color: #348c8d; }
 
 .green {
   background-color: #104332;
-  color: #f4f0e5;
-}
+  color: #f4f0e5; }
 
 /* Normalise styles */
 html {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 body {
-  font-family: "Figtree", sans-serif;
-}
-body #menu_toggle {
-  display: none;
-}
-body h1, body h2, body h3, body h4, body h5, body h6, body .alt_text {
-  font-family: "Lora", serif;
-}
+  font-family: "Figtree", sans-serif; }
+  body #menu_toggle {
+    display: none; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body .alt_text {
+    font-family: "Lora", serif; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 a:hover {
-  opacity: 0.7;
-}
+  opacity: .7; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 /* Design styles */
 /* Colors */
@@ -81,80 +65,64 @@ img {
 /* Buttons */
 .btn {
   border-radius: 10px;
-  padding: 0.7rem 1rem;
-  display: inline-block;
-}
+  padding: .7rem 1rem;
+  display: inline-block; }
 
 .btn_outline {
   border: 1px solid gray;
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 .btn_fill {
   background-color: black;
-  color: white;
-}
+  color: white; }
 
 .beige {
-  background-color: #f4f0e5;
-}
+  background-color: #f4f0e5; }
 
 .gold {
-  background-color: #e9e730;
-}
+  background-color: #e9e730; }
 
 .teal {
-  background-color: #348c8d;
-}
+  background-color: #348c8d; }
 
 .green {
   background-color: #104332;
-  color: #f4f0e5;
-}
+  color: #f4f0e5; }
 
 /* Normalise styles */
 html {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 body {
-  font-family: "Figtree", sans-serif;
-}
-body #menu_toggle {
-  display: none;
-}
-body h1, body h2, body h3, body h4, body h5, body h6, body .alt_text {
-  font-family: "Lora", serif;
-}
+  font-family: "Figtree", sans-serif; }
+  body #menu_toggle {
+    display: none; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body .alt_text {
+    font-family: "Lora", serif; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 a:hover {
-  opacity: 0.7;
-}
+  opacity: .7; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 /* Header section */
 main-header #announcements {
   background-color: #104332;
   color: white;
-  padding: 0.8rem;
+  padding: .8rem;
   font-weight: bold;
   position: fixed;
   top: 0;
@@ -163,8 +131,7 @@ main-header #announcements {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 6;
-}
+  z-index: 6; }
 main-header nav {
   position: fixed;
   top: 5vh;
@@ -174,85 +141,67 @@ main-header nav {
   display: flex;
   padding: 1rem 2rem;
   gap: 1rem;
-  /* User profile */
-}
-main-header nav .logo {
-  width: 54.22px;
-  height: 44.45px;
-}
-main-header nav #nav_bar {
-  /* Horizontal layout */
-  flex: 1;
-  align-items: center;
-  justify-content: end;
-  gap: 4rem;
-  background-color: #f4f0e5;
-  transition: left 100ms ease-in-out;
-  display: flex;
-  /* Remove bullet points, underline, and blue text on links */
-}
-main-header nav #nav_bar .links {
-  list-style: none;
-}
-main-header nav #nav_bar .links li {
-  display: inline;
-}
-main-header nav #nav_bar .links li a {
-  text-decoration: none;
-  color: inherit;
-  padding: 1rem;
-}
-main-header nav #nav_bar .links.account {
-  color: white;
-}
-main-header nav #nav_bar .links.account a {
-  padding: 0.7rem 1rem;
-}
-main-header nav .top {
-  display: flex;
-  align-items: center;
-}
-main-header nav .top .utility {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-main-header nav .top .utility .icon {
-  color: #104332;
-  height: 25px;
-  width: 25px;
-}
-main-header nav .top .utility .user {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-main-header nav .top .utility .user .avatar {
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-}
+  /* User profile */ }
+  main-header nav .logo {
+    width: 54.22px;
+    height: 44.45px; }
+  main-header nav #nav_bar {
+    /* Horizontal layout */
+    flex: 1;
+    align-items: center;
+    justify-content: end;
+    gap: 4rem;
+    background-color: #f4f0e5;
+    transition: left 100ms ease-in-out;
+    display: flex;
+    /* Remove bullet points, underline, and blue text on links */ }
+    main-header nav #nav_bar .links {
+      list-style: none; }
+      main-header nav #nav_bar .links li {
+        display: inline; }
+        main-header nav #nav_bar .links li a {
+          text-decoration: none;
+          color: inherit;
+          padding: 1rem; }
+    main-header nav #nav_bar .links.account {
+      color: white; }
+      main-header nav #nav_bar .links.account a {
+        padding: .7rem 1rem; }
+  main-header nav .top {
+    display: flex;
+    align-items: center; }
+    main-header nav .top .utility {
+      display: flex;
+      gap: 1rem;
+      align-items: center; }
+      main-header nav .top .utility .icon {
+        color: #104332;
+        height: 25px;
+        width: 25px; }
+      main-header nav .top .utility .user {
+        display: flex;
+        gap: 1rem;
+        align-items: center; }
+        main-header nav .top .utility .user .avatar {
+          border-radius: 50%;
+          height: 40px;
+          width: 40px; }
 
 footer {
   background-color: #f4f0e5;
-  padding: 5rem;
-}
-footer .links {
-  display: flex;
-  margin-bottom: 5rem;
-}
-footer .links * {
-  flex: 1;
-}
-footer .links h2 {
-  font-family: "Lora";
-  margin-bottom: 1rem;
-}
-footer .links ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
+  padding: 5rem; }
+  footer .links {
+    display: flex;
+    margin-bottom: 5rem; }
+    footer .links * {
+      flex: 1; }
+    footer .links h2 {
+      font-family: "Lora";
+      margin-bottom: 1rem; }
+    footer .links ul {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem; }
 
 #container {
   display: grid;
@@ -260,275 +209,219 @@ footer .links ul {
   grid-template-areas: "sidebar header header header header" "sidebar projects projects projects projects" ". footer footer footer footer";
   padding: 5rem 2rem 2rem 2rem;
   background-color: #f8fafc;
-  margin-top: 6vh;
-}
-#container .avatar {
-  width: 40px;
-  border-radius: 50%;
-}
-#container .icon {
-  width: 25px;
-}
-#container #header {
-  grid-area: header;
-  margin-bottom: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "main-header main-header main-header main-header" ". . . top" "bottom bottom bottom bottom";
-}
-#container #header .top,
-#container #header .bottom {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-#container #header main-header {
-  grid-area: main-header;
-}
-#container #header .bottom {
-  align-items: center;
-  grid-area: bottom;
-}
-#container #header .bottom .user {
-  display: flex;
-  gap: 0.8rem;
-  align-items: end;
-}
-#container #header .bottom .user .avatar {
-  width: 125px;
-  border-radius: 10px;
-}
-#container #header .bottom .user div {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-#container #header .bottom .user div .name {
-  font-size: 2rem;
-  letter-spacing: 0.3rem;
-}
-#container #header .bottom .user div .address {
-  font-size: 0.8rem;
-  color: gray;
-}
-#container #header .bottom .actions {
-  align-self: end;
-}
-#container #header .bottom .actions ul {
-  text-align: right;
-  list-style: none;
-}
-#container #header .bottom .actions ul li {
-  display: inline-block;
-  border-radius: 10px;
-  margin-left: 0.5rem;
-  color: #1e293b;
-  font-size: small;
-  padding: 0.5rem 0;
-  font-weight: bold;
-}
-#container #header .bottom .actions ul li a {
-  border: 1px solid #1e293b;
-  text-decoration: none;
-  color: inherit;
-  padding: 0.5rem 1rem;
-  border-radius: inherit;
-}
-#container #header .bottom .actions ul li a:hover {
-  color: white;
-  background-color: #1e293b;
-}
-#container #sidebar {
-  grid-area: sidebar;
-}
-#container #sidebar h1 {
-  margin-bottom: 1rem;
-}
-#container #sidebar #logo a:hover {
-  color: #713f12;
-}
-#container #sidebar #logo a:hover svg {
-  fill: #713f12;
-}
-#container #sidebar #logo a {
-  display: grid;
-  grid-template-columns: 25px 1fr;
-  gap: 1rem;
-  align-items: center;
-  margin-bottom: 2rem;
-  text-decoration: none;
-  color: #1e293b;
-}
-#container #sidebar #logo a svg {
-  width: 25px;
-}
-#container #sidebar #logo a p {
-  display: inline;
-  font-weight: bold;
-}
-#container #sidebar ul {
-  list-style: none;
-  margin-bottom: 2rem;
-}
-#container #sidebar ul li a:hover {
-  color: #713f12;
-}
-#container #sidebar ul li a:hover svg {
-  fill: #713f12;
-}
-#container #sidebar ul li a {
-  text-decoration: none;
-  color: black;
-  display: grid;
-  grid-template-columns: 25px 1fr;
-  align-items: center;
-  gap: 1rem;
-  font-weight: bold;
-  font-size: small;
-}
-#container #projects {
-  grid-area: projects;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "projects-container announcements" "projects-container trending" "projects-container .";
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid #e2e8f0;
-  padding: 2rem;
-  gap: 1rem;
-}
-#container #projects .projects-container .projects .project,
-#container #projects .trending {
-  border-radius: 10px;
-  padding: 1rem;
-  border: 1px solid #e2e8f0;
-}
-#container #projects .job,
-#container #projects .skill,
-#container #projects .education_history,
-#container #projects .user_project,
-#container #projects .job_recommendation {
-  border: 1px solid #e2e8f0;
-  border-radius: 5px;
-  padding: 1rem;
-  margin-top: 1rem;
-}
-#container #projects .job h3,
-#container #projects .skill h3,
-#container #projects .education_history h3,
-#container #projects .user_project h3,
-#container #projects .job_recommendation h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-#container #projects .job p,
-#container #projects .skill p,
-#container #projects .education_history p,
-#container #projects .user_project p,
-#container #projects .job_recommendation p {
-  font-size: 0.85rem;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  line-height: 1.5;
-}
-#container #projects .job:hover,
-#container #projects .skill:hover,
-#container #projects .education_history:hover,
-#container #projects .user_project:hover,
-#container #projects .job_recommendation:hover {
-  color: #713f12;
-  border: 1px solid #713f12;
-}
-#container #projects .projects-container {
-  grid-area: projects-container;
-}
-#container #projects .projects-container h2 {
-  font-size: 1.2rem;
-}
-#container #projects .projects-container .projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "experience education" "skills user_projects";
-  gap: 1rem;
-}
-#container #projects .projects-container .projects .project:hover {
-  cursor: pointer;
-  border: 1px solid gray;
-}
-#container #projects .projects-container .projects .experience {
-  grid-area: experience;
-}
-#container #projects .projects-container .projects .education {
-  grid-area: education;
-}
-#container #projects .projects-container .projects .skills {
-  grid-area: skills;
-}
-#container #projects .projects-container .projects .user_projects {
-  grid-area: user_projects;
-}
-#container #projects #announcements {
-  grid-area: announcements;
-}
-#container #projects #announcements h2 {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-#container #projects #announcements .announcements .announcement:hover {
-  cursor: pointer;
-  color: #713f12;
-}
-#container #projects #announcements .announcements .announcement {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-#container #projects #announcements .announcements .announcement h3 {
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
-}
-#container #projects #announcements .announcements .announcement p {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  line-height: 1.4;
-}
-#container #projects #trending {
-  grid-area: trending;
-}
-#container #projects #trending h2 {
-  font-size: 1.2rem;
-  margin: 2rem 0;
-}
-#container #projects #trending .trending-project:hover {
-  cursor: pointer;
-  color: #713f12;
-}
-#container #projects #trending .trending-project:first-of-type {
-  margin: 0;
-}
-#container #projects #trending .trending-project {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  grid-template-areas: "avatar name" "avatar project-name";
-  align-items: center;
-  column-gap: 0.5rem;
-  font-size: 0.8rem;
-  margin-top: 1rem;
-}
-#container #projects #trending .trending-project .avatar {
-  grid-area: avatar;
-}
-#container #projects #trending .trending-project .name {
-  grid-area: name;
-  align-self: end;
-  font-weight: bold;
-}
-#container #projects #trending .trending-project .project-name {
-  grid-area: project-name;
-}
+  margin-top: 6vh; }
+  #container .avatar {
+    width: 40px;
+    border-radius: 50%; }
+  #container .icon {
+    width: 25px; }
+  #container #header {
+    grid-area: header;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "main-header main-header main-header main-header" ". . . top" "bottom bottom bottom bottom"; }
+    #container #header .top,
+    #container #header .bottom {
+      display: grid;
+      grid-template-columns: 2fr 1fr; }
+    #container #header main-header {
+      grid-area: main-header; }
+    #container #header .bottom {
+      align-items: center;
+      grid-area: bottom; }
+      #container #header .bottom .user {
+        display: flex;
+        gap: 0.8rem;
+        align-items: end; }
+        #container #header .bottom .user .avatar {
+          width: 125px;
+          border-radius: 10px; }
+        #container #header .bottom .user div {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+          #container #header .bottom .user div .name {
+            font-size: 2rem;
+            letter-spacing: .3rem; }
+          #container #header .bottom .user div .address {
+            font-size: .8rem;
+            color: gray; }
+      #container #header .bottom .actions {
+        align-self: end; }
+        #container #header .bottom .actions ul {
+          text-align: right;
+          list-style: none; }
+          #container #header .bottom .actions ul li {
+            display: inline-block;
+            border-radius: 10px;
+            margin-left: 0.5rem;
+            color: #1e293b;
+            font-size: small;
+            padding: 0.5rem 0;
+            font-weight: bold; }
+            #container #header .bottom .actions ul li a {
+              border: 1px solid #1e293b;
+              text-decoration: none;
+              color: inherit;
+              padding: 0.5rem 1rem;
+              border-radius: inherit; }
+            #container #header .bottom .actions ul li a:hover {
+              color: white;
+              background-color: #1e293b; }
+  #container #sidebar {
+    grid-area: sidebar; }
+    #container #sidebar h1 {
+      margin-bottom: 1rem; }
+    #container #sidebar #logo a:hover {
+      color: #713f12; }
+      #container #sidebar #logo a:hover svg {
+        fill: #713f12; }
+    #container #sidebar #logo a {
+      display: grid;
+      grid-template-columns: 25px 1fr;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      color: #1e293b; }
+      #container #sidebar #logo a svg {
+        width: 25px; }
+      #container #sidebar #logo a p {
+        display: inline;
+        font-weight: bold; }
+    #container #sidebar ul {
+      list-style: none;
+      margin-bottom: 2rem; }
+      #container #sidebar ul li a:hover {
+        color: #713f12; }
+        #container #sidebar ul li a:hover svg {
+          fill: #713f12; }
+      #container #sidebar ul li a {
+        text-decoration: none;
+        color: black;
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        align-items: center;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: small; }
+  #container #projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "projects-container announcements" "projects-container trending" "projects-container .";
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 2rem;
+    gap: 1rem; }
+    #container #projects .projects-container .projects .project,
+    #container #projects .trending {
+      border-radius: 10px;
+      padding: 1rem;
+      border: 1px solid #e2e8f0; }
+    #container #projects .job,
+    #container #projects .skill,
+    #container #projects .education_history,
+    #container #projects .user_project,
+    #container #projects .job_recommendation {
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-top: 1rem; }
+      #container #projects .job h3,
+      #container #projects .skill h3,
+      #container #projects .education_history h3,
+      #container #projects .user_project h3,
+      #container #projects .job_recommendation h3 {
+        font-size: 1.2rem;
+        margin-bottom: .5rem; }
+      #container #projects .job p,
+      #container #projects .skill p,
+      #container #projects .education_history p,
+      #container #projects .user_project p,
+      #container #projects .job_recommendation p {
+        font-size: 0.85rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        line-height: 1.5; }
+    #container #projects .job:hover,
+    #container #projects .skill:hover,
+    #container #projects .education_history:hover,
+    #container #projects .user_project:hover,
+    #container #projects .job_recommendation:hover {
+      color: #713f12;
+      border: 1px solid #713f12; }
+    #container #projects .projects-container {
+      grid-area: projects-container; }
+      #container #projects .projects-container h2 {
+        font-size: 1.2rem; }
+      #container #projects .projects-container .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "experience education" "skills user_projects";
+        gap: 1rem; }
+        #container #projects .projects-container .projects .project:hover {
+          cursor: pointer;
+          border: 1px solid gray; }
+        #container #projects .projects-container .projects .experience {
+          grid-area: experience; }
+        #container #projects .projects-container .projects .education {
+          grid-area: education; }
+        #container #projects .projects-container .projects .skills {
+          grid-area: skills; }
+        #container #projects .projects-container .projects .user_projects {
+          grid-area: user_projects; }
+    #container #projects #announcements {
+      grid-area: announcements; }
+      #container #projects #announcements h2 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem; }
+      #container #projects #announcements .announcements .announcement:hover {
+        cursor: pointer;
+        color: #713f12; }
+      #container #projects #announcements .announcements .announcement {
+        font-size: 0.9rem;
+        margin-bottom: 1rem; }
+        #container #projects #announcements .announcements .announcement h3 {
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+          line-height: 1.5; }
+        #container #projects #announcements .announcements .announcement p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          line-height: 1.4; }
+    #container #projects #trending {
+      grid-area: trending; }
+      #container #projects #trending h2 {
+        font-size: 1.2rem;
+        margin: 2rem 0; }
+      #container #projects #trending .trending-project:hover {
+        cursor: pointer;
+        color: #713f12; }
+      #container #projects #trending .trending-project:first-of-type {
+        margin: 0; }
+      #container #projects #trending .trending-project {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-template-areas: "avatar name" "avatar project-name";
+        align-items: center;
+        column-gap: 0.5rem;
+        font-size: 0.8rem;
+        margin-top: 1rem; }
+        #container #projects #trending .trending-project .avatar {
+          grid-area: avatar; }
+        #container #projects #trending .trending-project .name {
+          grid-area: name;
+          align-self: end;
+          font-weight: bold; }
+        #container #projects #trending .trending-project .project-name {
+          grid-area: project-name; }
 
 /*# sourceMappingURL=profile.css.map */

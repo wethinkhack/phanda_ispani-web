@@ -1,0 +1,20 @@
+@import 'main';
+@import ;
+
+body {font-family: $body-text;  
+}  
+  
+header {background-color: $green;  
+}  
+  
+footer {background-color: #343a40;  
+}  
+  
+.card {border: 1px solid #dee2e6;  
+}  
+  
+.card-title {font-weight: bold;  
+}  
+  
+@media (max-width: 768px) {main {padding: 2rem 1rem;}  
+}  
