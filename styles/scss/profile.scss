@@ -188,7 +188,7 @@ $beige: #f4f0e5;
             "jobs-container announcements"
             "jobs-container announcements"
             "jobs-container .";
-        background-color: white;
+        background-color: $beige;
         border-radius: 10px;
         border: 1px solid $border;
         padding: 2rem;
@@ -281,7 +281,7 @@ $beige: #f4f0e5;
                     cursor: pointer;
                     color: $text-accent;
                 }
-                .announcement {
+                .alert {
                     font-size: 0.9rem;
                     margin-bottom: 1rem;
 

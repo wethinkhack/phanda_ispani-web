@@ -1,16 +1,19 @@
 @import 'main';
-@import ;
+@import 'header';
+@import 'footer';
 
-body {font-family: $body-text;  
+body {
+    font-family: $body-text;  
+    padding-top: 20vh;
 }  
+
+button {
+    background-color: $green;
+}
   
-header {background-color: $green;  
-}  
-  
-footer {background-color: #343a40;  
-}  
-  
-.card {border: 1px solid #dee2e6;  
+.card {
+    border: 1px solid #ffffff;  
+    background-color: $beige;
 }  
   
 .card-title {font-weight: bold;  
