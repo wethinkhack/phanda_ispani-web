@@ -25,8 +25,7 @@ class MainHeader extends HTMLElement {
 
                     <section id="nav_bar">
                         <ul class="links browse">
-                            <li><a href="/pages/job_board.html">Job Search</a></li>
-                            <li><a href="/pages/job_posting.html">For Recruiters</a></li>
+                            
                         </ul>
                     </section>
                     ${this.getSignInState()}
