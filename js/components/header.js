@@ -4,9 +4,6 @@ class MainHeader extends HTMLElement {
     }
     
     connectedCallback() {
-        let path = window.location.href;
-        path = path.substring(0, path.split('/', 4).join('/').length + 1);
-
         this.innerHTML = `
             <header>
                 <section id="announcements">
@@ -17,33 +14,32 @@ class MainHeader extends HTMLElement {
                 <!-- Navigation section -->
                 <nav>
                     <div id="logo">
-                        <a href="${path}"><img class="logo" src="${path}img/logo.png" alt="Phanda Ispani logo" width="122px" height="100px"></a>
+                        <a href="/"><img class="logo" src="/img/logo.png" alt="Phanda Ispani logo" width="122px" height="100px"></a>
                     </div>
 
                     <!-- Mobile menu toggle -->
                     <div id="menu_toggle">
                         <div class="bar"></div>
-                        <!-- <div class="bar"></div> -->
                         <div class="bar"></div>
                     </div>
 
                     <section id="nav_bar">
                         <ul class="links browse">
-                            <li><a href="${path}pages/job_board.html">Job Search</a></li>
-                            <li><a href="${path}pages/job_posting.html">For Recruiters</a></li>
+                            <li><a href="/pages/job_board.html">Job Search</a></li>
+                            <li><a href="/pages/job_posting.html">For Recruiters</a></li>
                         </ul>
                     </section>
-                    ${this.getSignInState(path)}
+                    ${this.getSignInState()}
                 </nav>
             </header>
         `;
     }
 
-    getSignInState(path) {
-        if (!this.userSignedIn(path)) {
+    getSignInState() {
+        if (!this.userSignedIn()) {
             return `
                 <ul class="links account">
-                    <li><a href="${path}pages/account.html" class="btn btn_fill">Get Started</a></li>
+                    <li><a href="/pages/account.html" class="btn btn_fill">Get Started</a></li>
                 </ul>
             `;
         }
@@ -58,7 +54,7 @@ class MainHeader extends HTMLElement {
                     </svg>
 
                     <div class="user">
-                        <a href="${path}pages/profile.html"><img class="avatar" src="${path}img/avatar-1.jpg" alt="User avatar" /></a>
+                        <a href="/pages/profile.html"><img class="avatar" src="/img/avatar-1.jpg" alt="User avatar" /></a>
                     </div>
                 </div>
             </section>

@@ -18,7 +18,8 @@
   color: white; }
 
 .beige {
-  background-color: #f4f0e5; }
+  background-color: #f4f0e5;
+  color: black; }
 
 .gold {
   background-color: #e9e730; }
@@ -77,7 +78,8 @@ img {
   color: white; }
 
 .beige {
-  background-color: #f4f0e5; }
+  background-color: #f4f0e5;
+  color: black; }
 
 .gold {
   background-color: #e9e730; }
@@ -206,7 +208,7 @@ footer {
 #container {
   display: grid;
   grid-template-columns: 220px repeat(4, 1fr);
-  grid-template-areas: "sidebar header header header header" "sidebar projects projects projects projects" ". footer footer footer footer";
+  grid-template-areas: "sidebar header header header header" "sidebar jobs jobs jobs jobs" ". footer footer footer footer";
   padding: 5rem 2rem 2rem 2rem;
   background-color: #f8fafc;
   margin-top: 6vh; }
@@ -306,122 +308,114 @@ footer {
         gap: 1rem;
         font-weight: bold;
         font-size: small; }
-  #container #projects {
-    grid-area: projects;
+  #container #jobs {
+    grid-area: jobs;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: "projects-container announcements" "projects-container trending" "projects-container .";
+    grid-template-areas: "jobs-container announcements" "jobs-container announcements" "jobs-container .";
     background-color: white;
     border-radius: 10px;
     border: 1px solid #e2e8f0;
     padding: 2rem;
     gap: 1rem; }
-    #container #projects .projects-container .projects .project,
-    #container #projects .trending {
+    #container #jobs .jobs-container .jobs .job,
+    #container #jobs .trending {
       border-radius: 10px;
       padding: 1rem;
       border: 1px solid #e2e8f0; }
-    #container #projects .job,
-    #container #projects .skill,
-    #container #projects .education_history,
-    #container #projects .user_project,
-    #container #projects .job_recommendation {
+    #container #jobs .job,
+    #container #jobs .user_job,
+    #container #jobs .job_recommendation {
       border: 1px solid #e2e8f0;
       border-radius: 5px;
       padding: 1rem;
       margin-top: 1rem; }
-      #container #projects .job h3,
-      #container #projects .skill h3,
-      #container #projects .education_history h3,
-      #container #projects .user_project h3,
-      #container #projects .job_recommendation h3 {
+      #container #jobs .job h3,
+      #container #jobs .user_job h3,
+      #container #jobs .job_recommendation h3 {
         font-size: 1.2rem;
         margin-bottom: .5rem; }
-      #container #projects .job p,
-      #container #projects .skill p,
-      #container #projects .education_history p,
-      #container #projects .user_project p,
-      #container #projects .job_recommendation p {
+      #container #jobs .job p,
+      #container #jobs .user_job p,
+      #container #jobs .job_recommendation p {
         font-size: 0.85rem;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
         line-height: 1.5; }
-    #container #projects .job:hover,
-    #container #projects .skill:hover,
-    #container #projects .education_history:hover,
-    #container #projects .user_project:hover,
-    #container #projects .job_recommendation:hover {
+    #container #jobs .job:hover,
+    #container #jobs .user_job:hover,
+    #container #jobs .job_recommendation:hover {
       color: #713f12;
       border: 1px solid #713f12; }
-    #container #projects .projects-container {
-      grid-area: projects-container; }
-      #container #projects .projects-container h2 {
+    #container #jobs .jobs-container {
+      grid-area: jobs-container; }
+      #container #jobs .jobs-container h2 {
         font-size: 1.2rem; }
-      #container #projects .projects-container .projects {
+      #container #jobs .jobs-container .jobs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "experience education" "skills user_projects";
+        grid-template-areas: "experience education" "skills user_jobs";
         gap: 1rem; }
-        #container #projects .projects-container .projects .project:hover {
+        #container #jobs .jobs-container .jobs .job:hover {
           cursor: pointer;
           border: 1px solid gray; }
-        #container #projects .projects-container .projects .experience {
+        #container #jobs .jobs-container .jobs .experience {
           grid-area: experience; }
-        #container #projects .projects-container .projects .education {
+        #container #jobs .jobs-container .jobs .education {
           grid-area: education; }
-        #container #projects .projects-container .projects .skills {
+        #container #jobs .jobs-container .jobs .skills {
           grid-area: skills; }
-        #container #projects .projects-container .projects .user_projects {
-          grid-area: user_projects; }
-    #container #projects #announcements {
+        #container #jobs .jobs-container .jobs .user_jobs {
+          grid-area: user_jobs; }
+    #container #jobs #announcements {
       grid-area: announcements; }
-      #container #projects #announcements h2 {
+      #container #jobs #announcements h2 {
         font-size: 1.2rem;
         margin-bottom: 2rem; }
-      #container #projects #announcements .announcements .announcement:hover {
+      #container #jobs #announcements .announcements .announcement:hover {
         cursor: pointer;
         color: #713f12; }
-      #container #projects #announcements .announcements .announcement {
+      #container #jobs #announcements .announcements .announcement {
         font-size: 0.9rem;
         margin-bottom: 1rem; }
-        #container #projects #announcements .announcements .announcement h3 {
+        #container #jobs #announcements .announcements .announcement h3 {
           font-size: 0.9rem;
           margin-bottom: 0.5rem;
           line-height: 1.5; }
-        #container #projects #announcements .announcements .announcement p {
+        #container #jobs #announcements .announcements .announcement p {
           display: -webkit-box;
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 3;
           overflow: hidden;
           line-height: 1.4; }
-    #container #projects #trending {
+    #container #jobs #trending {
       grid-area: trending; }
-      #container #projects #trending h2 {
+      #container #jobs #trending h2 {
         font-size: 1.2rem;
         margin: 2rem 0; }
-      #container #projects #trending .trending-project:hover {
+      #container #jobs #trending .trending-job:hover {
         cursor: pointer;
         color: #713f12; }
-      #container #projects #trending .trending-project:first-of-type {
+      #container #jobs #trending .trending-job:first-of-type {
         margin: 0; }
-      #container #projects #trending .trending-project {
+      #container #jobs #trending .trending-job {
         display: grid;
         grid-template-columns: 40px 1fr;
-        grid-template-areas: "avatar name" "avatar project-name";
+        grid-template-areas: "avatar name" "avatar job-name";
         align-items: center;
         column-gap: 0.5rem;
         font-size: 0.8rem;
         margin-top: 1rem; }
-        #container #projects #trending .trending-project .avatar {
+        #container #jobs #trending .trending-job .avatar {
           grid-area: avatar; }
-        #container #projects #trending .trending-project .name {
+        #container #jobs #trending .trending-job .name {
           grid-area: name;
           align-self: end;
           font-weight: bold; }
-        #container #projects #trending .trending-project .project-name {
-          grid-area: project-name; }
+        #container #jobs #trending .trending-job .job-name {
+          grid-area: job-name; }
 
 /*# sourceMappingURL=profile.css.map */

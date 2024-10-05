@@ -22,7 +22,7 @@ $beige: #f4f0e5;
     grid-template-columns: 220px repeat(4, 1fr);
     grid-template-areas:
         "sidebar header header header header"
-        "sidebar projects projects projects projects"
+        "sidebar jobs jobs jobs jobs"
         ". footer footer footer footer";
     padding: 5rem 2rem 2rem 2rem;
     background-color: $bg;
@@ -180,21 +180,21 @@ $beige: #f4f0e5;
         }
     }
 
-    #projects {
-        grid-area: projects;
+    #jobs {
+        grid-area: jobs;
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-template-areas:
-            "projects-container announcements"
-            "projects-container trending"
-            "projects-container .";
+            "jobs-container announcements"
+            "jobs-container announcements"
+            "jobs-container .";
         background-color: white;
         border-radius: 10px;
         border: 1px solid $border;
         padding: 2rem;
         gap: 1rem;
 
-        .projects-container .projects .project,
+        .jobs-container .jobs .job,
         .trending {
             border-radius: 10px;
             padding: 1rem;
@@ -202,9 +202,7 @@ $beige: #f4f0e5;
         }
 
         .job,
-        .skill,
-        .education_history,
-        .user_project,
+        .user_job,
         .job_recommendation {
             border: 1px solid #e2e8f0;
             border-radius: 5px;
@@ -227,33 +225,31 @@ $beige: #f4f0e5;
         }
 
         .job:hover,
-        .skill:hover,
-        .education_history:hover,
-        .user_project:hover,
+        .user_job:hover,
         .job_recommendation:hover {
             color: $text-accent;
             border: 1px solid $text-accent;
         }
 
-        .projects-container {
-            grid-area: projects-container;
+        .jobs-container {
+            grid-area: jobs-container;
 
             h2 {
                 font-size: 1.2rem;
             }
 
-            .projects {
+            .jobs {
                 // margin-top: 2rem;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: auto;
                 grid-template-areas: 
                     "experience education"
-                    "skills user_projects";
+                    "skills user_jobs";
                 gap: 1rem;
                 
 
-                .project:hover {
+                .job:hover {
                     cursor: pointer;
                     border: 1px solid gray;
                 }
@@ -267,8 +263,8 @@ $beige: #f4f0e5;
                 .skills {
                     grid-area: skills;
                 }
-                .user_projects {
-                    grid-area: user_projects;
+                .user_jobs {
+                    grid-area: user_jobs;
                 }
 
             }
@@ -313,19 +309,19 @@ $beige: #f4f0e5;
                 margin: 2rem 0;
             }
 
-            .trending-project:hover {
+            .trending-job:hover {
                 cursor: pointer;
                 color: $text-accent;
             }
-            .trending-project:first-of-type {
+            .trending-job:first-of-type {
                 margin: 0;
             }
-            .trending-project {
+            .trending-job {
                 display: grid;
                 grid-template-columns: $avatar-width 1fr;
                 grid-template-areas:
                     "avatar name"
-                    "avatar project-name";
+                    "avatar job-name";
                 align-items: center;
                 column-gap: 0.5rem;
                 font-size: 0.8rem;
@@ -340,8 +336,8 @@ $beige: #f4f0e5;
                     align-self: end;
                     font-weight: bold;
                 }
-                .project-name {
-                    grid-area: project-name;
+                .job-name {
+                    grid-area: job-name;
                 }
             }
         }
