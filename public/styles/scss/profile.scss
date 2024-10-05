@@ -1,0 +1,349 @@
+/* Design styles */
+$icon-width: 25px;
+$avatar-width: 40px;
+$bg: #f8fafc;
+$border: #e2e8f0;
+$text: #1e293b;
+$text-accent: #713f12;
+
+/* Colors */
+$gold: #e9e730;
+$green: #104332;
+$teal: #348c8d;
+$beige: #f4f0e5;
+
+// Imports
+@import 'main';
+@import 'header';
+@import 'footer';
+
+#container {
+    display: grid;
+    grid-template-columns: 220px repeat(4, 1fr);
+    grid-template-areas:
+        "sidebar header header header header"
+        "sidebar projects projects projects projects"
+        ". footer footer footer footer";
+    padding: 5rem 2rem 2rem 2rem;
+    background-color: $bg;
+    margin-top: 6vh;
+
+    .avatar {
+        width: $avatar-width;
+        border-radius: 50%;
+    }
+    .icon {
+        width: $icon-width;
+    }
+
+    #header {
+        grid-area: header;
+        margin-bottom: 2rem;
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "main-header main-header main-header main-header" 
+            ". . . top"
+            "bottom bottom bottom bottom";
+        .top,
+        .bottom {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        main-header {
+            grid-area: main-header;
+        }
+
+        .bottom {
+            align-items: center;
+            grid-area: bottom;
+
+            .user {
+                display: flex;
+                gap: 0.8rem;
+                align-items: end;
+                
+                .avatar {
+                    width: 125px;
+                    border-radius: 10px;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+
+                    .name {
+                        font-size: 2rem;
+                        letter-spacing: .3rem;
+                    }
+                    .address {
+                        font-size: .8rem;
+                        color: gray;
+                    }
+                    .headline {
+
+                    }
+                }
+
+            }
+
+            .actions {
+                align-self: end;
+                ul {
+                    text-align: right;
+                    list-style: none;
+
+                    li {
+                        display: inline-block;
+                        border-radius: 10px;
+                        margin-left: 0.5rem;
+                        color: $text;
+                        font-size: small;
+                        padding: 0.5rem 0;
+                        font-weight: bold;
+
+                        a {
+                            border: 1px solid $text;
+                            text-decoration: none;
+                            color: inherit;
+                            padding: 0.5rem 1rem;
+                            border-radius: inherit;
+                        }
+                        a:hover {
+                            color: white;
+                            background-color: $text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #sidebar {
+        grid-area: sidebar;
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        #logo {
+            a:hover {
+                color: $text-accent;
+
+                svg {
+                    fill: $text-accent;
+                }
+            }
+            a {
+                display: grid;
+                grid-template-columns: $icon-width 1fr;
+                gap: 1rem;
+                align-items: center;
+                margin-bottom: 2rem;
+                text-decoration: none;
+                color: $text;
+
+                svg {
+                    width: $icon-width;
+                }
+                p {
+                    display: inline;
+                    font-weight: bold;
+                }
+            }
+        }
+        ul {
+            list-style: none;
+            margin-bottom: 2rem;
+
+            li {
+                a:hover {
+                    color: $text-accent;
+
+                    svg {
+                        fill: #713f12;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                    display: grid;
+                    grid-template-columns: $icon-width 1fr;
+                    align-items: center;
+                    gap: 1rem;
+                    font-weight: bold;
+                    font-size: small;
+                }
+            }
+        }
+    }
+
+    #projects {
+        grid-area: projects;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+            "projects-container announcements"
+            "projects-container trending"
+            "projects-container .";
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid $border;
+        padding: 2rem;
+        gap: 1rem;
+
+        .projects-container .projects .project,
+        .trending {
+            border-radius: 10px;
+            padding: 1rem;
+            border: 1px solid $border;
+        }
+
+        .job,
+        .skill,
+        .education_history,
+        .user_project,
+        .job_recommendation {
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-top: 1rem;
+
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: .5rem;
+            }
+
+            p {
+                font-size: 0.85rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                line-height: 1.5;
+            }
+        }
+
+        .job:hover,
+        .skill:hover,
+        .education_history:hover,
+        .user_project:hover,
+        .job_recommendation:hover {
+            color: $text-accent;
+            border: 1px solid $text-accent;
+        }
+
+        .projects-container {
+            grid-area: projects-container;
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .projects {
+                // margin-top: 2rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "experience education"
+                    "skills user_projects";
+                gap: 1rem;
+                
+
+                .project:hover {
+                    cursor: pointer;
+                    border: 1px solid gray;
+                }
+
+                .experience {
+                    grid-area: experience;
+                }
+                .education {
+                    grid-area: education;
+                }
+                .skills {
+                    grid-area: skills;
+                }
+                .user_projects {
+                    grid-area: user_projects;
+                }
+
+            }
+        }
+        #announcements {
+            grid-area: announcements;
+            h2 {
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+
+            .announcements {
+                .announcement:hover {
+                    cursor: pointer;
+                    color: $text-accent;
+                }
+                .announcement {
+                    font-size: 0.9rem;
+                    margin-bottom: 1rem;
+
+                    h3 {
+                        font-size: 0.9rem;
+                        margin-bottom: 0.5rem;
+                        line-height: 1.5;
+                    }
+
+                    p {
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+        #trending {
+            grid-area: trending;
+
+            h2 {
+                font-size: 1.2rem;
+                margin: 2rem 0;
+            }
+
+            .trending-project:hover {
+                cursor: pointer;
+                color: $text-accent;
+            }
+            .trending-project:first-of-type {
+                margin: 0;
+            }
+            .trending-project {
+                display: grid;
+                grid-template-columns: $avatar-width 1fr;
+                grid-template-areas:
+                    "avatar name"
+                    "avatar project-name";
+                align-items: center;
+                column-gap: 0.5rem;
+                font-size: 0.8rem;
+                margin-top: 1rem;
+
+                .avatar {
+                    grid-area: avatar;
+                }
+
+                .name {
+                    grid-area: name;
+                    align-self: end;
+                    font-weight: bold;
+                }
+                .project-name {
+                    grid-area: project-name;
+                }
+            }
+        }
+    }
+}
