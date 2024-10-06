@@ -39,7 +39,7 @@
     const Email = document.getElementById('signInEmail').value;
     const Password = document.getElementById('signInPassword').value;
   
-/*
+
     if (!Email || !Password) {
         console.error('Email and Password are required.');
         return;
@@ -53,7 +53,7 @@
         }
         return;
     }
-*/
+
 
 
 
