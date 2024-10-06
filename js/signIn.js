@@ -1,8 +1,8 @@
 
-import("secrteAPI");
+import {secrteAPI as firebaseConfig} from "secrteAPI.js";
 const { default: firebase } = require("firebase/compat/app");
 
- let firebaseConfig = "secrteAPI.js"
+ 
 
   //initialize firebase
   firebase.initializeApp(firebaseConfig);

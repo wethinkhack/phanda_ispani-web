@@ -1,5 +1,5 @@
 // Your web app's Firebase configuration
-import("secrteAPI");
+import {secrteAPI as firebaseConfig} from "secrteAPI.js";
 //initialize firebase
 firebase.initializeApp(firebaseConfig);
   
