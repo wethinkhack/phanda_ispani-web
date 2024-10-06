@@ -52,9 +52,56 @@
 
           <div class="actions">
             <ul>
-              <li><a href="/pages/job_posting.html">New</a></li>
+              <li>
+                <button id="add_job" class="btn btn_outline">New</button>
+              </li>
             </ul>
           </div>
+
+          <!-- Form dialog -->
+          <dialog>
+            <form action="dialog">
+              <form>
+                <div class="form-group">
+                  <label for="jobTitle">Job Title</label
+                  ><input
+                    type="text"
+                    class="form-control"
+                    id="jobTitle"
+                    placeholder="Enter job title"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="companyName">Company Name</label
+                  ><input
+                    type="text"
+                    class="form-control"
+                    id="companyName"
+                    placeholder="Enter company name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="jobDescription">Job Description</label
+                  ><textarea
+                    class="form-control"
+                    id="jobDescription"
+                    rows="3"
+                    placeholder="Enter job description"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  id="post_vacancy"
+                  class="btn btn_fill green"
+                >
+                  Post Vacancy
+                </button>
+              </form>
+            </form>
+          </dialog>
         </section>
       </header>
 
@@ -167,10 +214,6 @@
         <div class="jobs-container">
           <h2>Jobs</h2>
           <section class="jobs">
-            <job-component></job-component>
-            <job-component></job-component>
-            <job-component></job-component>
-            <job-component></job-component>
           </section>
         </div>
 
@@ -188,5 +231,7 @@
     </main>
 
     <main-footer id="footer"></main-footer>
+
+    <script src="/js/job_posts.js"></script>
   </body>
 </html>

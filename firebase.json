@@ -1,17 +1,11 @@
 {
   "hosting": {
-    "site": "phandaispanii",
-    "public": "public",
+    "site": "phanda-ispani",
+    "public": "/",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }

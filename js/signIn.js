@@ -1,24 +1,8 @@
-// Your web app's Firebase configuration
-/*const firebaseConfig = {
-    apiKey: "AIzaSyDMI6MED71-FeM57FLzx7p-Jc_83Q-bzCM",
-    authDomain: "ayobaproconnect.firebaseapp.com",
-    databaseURL: "https://ayobaproconnect-default-rtdb.firebaseio.com",
-    projectId: "ayobaproconnect",
-    storageBucket: "ayobaproconnect.appspot.com",
-    messagingSenderId: "457982210991",
-    appId: "1:457982210991:web:35858882b2b03e9267355a",
-    measurementId: "G-B46J0446E2"
-  };*/
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyDuFpdC_v1wNltOPlNB2BTZEzJWQC-lkC4",
-    authDomain: "phanda-ispani-fad86.firebaseapp.com",
-    projectId: "phanda-ispani-fad86",
-    storageBucket: "phanda-ispani-fad86.appspot.com",
-    messagingSenderId: "638455059583",
-    appId: "1:638455059583:web:8ecb9d5c5c20e832195b4a",
-    measurementId: "G-KMD67S121Z"
-  };
+import {secrteAPI as firebaseConfig} from "secrteAPI.js";
+const { default: firebase } = require("firebase/compat/app");
+
+ 
 
   //initialize firebase
   firebase.initializeApp(firebaseConfig);
@@ -39,7 +23,7 @@
     const Email = document.getElementById('signInEmail').value;
     const Password = document.getElementById('signInPassword').value;
   
-/*
+
     if (!Email || !Password) {
         console.error('Email and Password are required.');
         return;
@@ -53,7 +37,7 @@
         }
         return;
     }
-*/
+
 
 
 
@@ -92,6 +76,10 @@
       // Show login form or perform actions for logged out user
     }
   });
+
+
+
+
   
   
 
