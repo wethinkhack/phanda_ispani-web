@@ -282,7 +282,8 @@ footer {
               border-radius: inherit; }
             #container #header .bottom .actions ul li a:hover {
               color: white;
-              background-color: #1e293b; }
+              background-color: #1e293b;
+              cursor: pointer; }
   #container #sidebar {
     grid-area: sidebar; }
     #container #sidebar h1 {
@@ -364,18 +365,8 @@ footer {
         display: grid;
         grid-template-rows: auto;
         gap: 1rem; }
-        #container #jobs .jobs-container .jobs .job button {
-          margin-top: 1rem; }
-        #container #jobs .jobs-container .jobs .job:hover {
+        #container #jobs .jobs-container .jobs .job button:hover {
           cursor: pointer; }
-        #container #jobs .jobs-container .jobs .experience {
-          grid-area: experience; }
-        #container #jobs .jobs-container .jobs .education {
-          grid-area: education; }
-        #container #jobs .jobs-container .jobs .skills {
-          grid-area: skills; }
-        #container #jobs .jobs-container .jobs .user_jobs {
-          grid-area: user_jobs; }
     #container #jobs #announcements {
       grid-area: announcements; }
       #container #jobs #announcements h2 {

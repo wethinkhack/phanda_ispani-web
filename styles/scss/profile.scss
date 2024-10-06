@@ -132,6 +132,7 @@ $beige: #f4f0e5;
                         a:hover {
                             color: white;
                             background-color: $text;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -265,24 +266,9 @@ $beige: #f4f0e5;
                 //     ""
                 //     "skills user_jobs";
                 gap: 1rem;
-                
-                .job button {
-                    margin-top: 1rem;
-                }
-                .job:hover {
+
+                .job button:hover {
                     cursor: pointer;
-                }
-                .experience {
-                    grid-area: experience;
-                }
-                .education {
-                    grid-area: education;
-                }
-                .skills {
-                    grid-area: skills;
-                }
-                .user_jobs {
-                    grid-area: user_jobs;
                 }
 
             }
