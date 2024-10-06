@@ -209,7 +209,7 @@ footer {
   display: grid;
   grid-template-columns: 220px repeat(4, 1fr);
   grid-template-areas: "sidebar header header header header" "sidebar jobs jobs jobs jobs" ". footer footer footer footer";
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 20vh 2rem 2rem 2rem;
   background-color: #f8fafc;
   margin-top: 6vh; }
   #container .avatar {
@@ -232,6 +232,18 @@ footer {
     #container #header .bottom {
       align-items: center;
       grid-area: bottom; }
+      #container #header .bottom dialog {
+        padding: 2rem 3rem 3rem 3rem;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; }
+        #container #header .bottom dialog * {
+          display: block;
+          margin-top: 1rem; }
+        #container #header .bottom dialog input, #container #header .bottom dialog textarea {
+          padding: .5rem;
+          width: 100%; }
       #container #header .bottom .user {
         display: flex;
         gap: 0.8rem;
@@ -344,24 +356,18 @@ footer {
         -webkit-line-clamp: 2;
         overflow: hidden;
         line-height: 1.5; }
-    #container #jobs .job:hover,
-    #container #jobs .user_job:hover,
-    #container #jobs .job_recommendation:hover {
-      color: #713f12;
-      border: 1px solid #713f12; }
     #container #jobs .jobs-container {
       grid-area: jobs-container; }
       #container #jobs .jobs-container h2 {
         font-size: 1.2rem; }
       #container #jobs .jobs-container .jobs {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "experience education" "skills user_jobs";
         gap: 1rem; }
+        #container #jobs .jobs-container .jobs .job button {
+          margin-top: 1rem; }
         #container #jobs .jobs-container .jobs .job:hover {
-          cursor: pointer;
-          border: 1px solid gray; }
+          cursor: pointer; }
         #container #jobs .jobs-container .jobs .experience {
           grid-area: experience; }
         #container #jobs .jobs-container .jobs .education {
@@ -391,31 +397,5 @@ footer {
           -webkit-line-clamp: 3;
           overflow: hidden;
           line-height: 1.4; }
-    #container #jobs #trending {
-      grid-area: trending; }
-      #container #jobs #trending h2 {
-        font-size: 1.2rem;
-        margin: 2rem 0; }
-      #container #jobs #trending .trending-job:hover {
-        cursor: pointer;
-        color: #713f12; }
-      #container #jobs #trending .trending-job:first-of-type {
-        margin: 0; }
-      #container #jobs #trending .trending-job {
-        display: grid;
-        grid-template-columns: 40px 1fr;
-        grid-template-areas: "avatar name" "avatar job-name";
-        align-items: center;
-        column-gap: 0.5rem;
-        font-size: 0.8rem;
-        margin-top: 1rem; }
-        #container #jobs #trending .trending-job .avatar {
-          grid-area: avatar; }
-        #container #jobs #trending .trending-job .name {
-          grid-area: name;
-          align-self: end;
-          font-weight: bold; }
-        #container #jobs #trending .trending-job .job-name {
-          grid-area: job-name; }
 
 /*# sourceMappingURL=profile.css.map */
